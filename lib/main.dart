@@ -17,6 +17,39 @@ class Main extends StatelessWidget {
         floatingActionButtonTheme: FloatingActionButtonThemeData(
           backgroundColor: Colors.redAccent,
           foregroundColor: Colors.white
+        ),
+        textTheme: TextTheme(
+          bodyText1: TextStyle(
+              fontFamily: 'Montserrat',
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.black
+          ),
+          headline1: TextStyle(
+              fontFamily: 'Montserrat',
+              fontSize: 16,
+              color: Colors.redAccent,
+              fontWeight: FontWeight.bold
+          ),
+          headline2: TextStyle(
+              fontFamily: "Montserrat",
+              fontSize: 16,
+              height: 1.5,
+              fontWeight: FontWeight.w500,
+              color: Colors.redAccent
+          ),
+          headline3: TextStyle(
+              fontFamily: "Montserrat",
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+              color: Colors.redAccent
+          ),
+          headline4: TextStyle(
+              fontFamily: "Montserrat",
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+              color: Colors.black
+            )
         )
       ),
       debugShowCheckedModeBanner: false,

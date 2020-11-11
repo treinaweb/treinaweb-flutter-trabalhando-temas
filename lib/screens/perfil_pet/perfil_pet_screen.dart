@@ -78,11 +78,7 @@ class _PerfilPetScreenState extends State<PerfilPetScreen> {
                       children: <Widget>[
                         Text(
                           pet.nome,
-                          style: TextStyle(
-                              fontFamily: "Montserrat",
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold
-                          ),
+                          style: Theme.of(context).textTheme.bodyText1,
                         )
                       ],
                     ),
@@ -94,11 +90,7 @@ class _PerfilPetScreenState extends State<PerfilPetScreen> {
                       children: <Widget>[
                         Text(
                           pet.descricao,
-                          style: TextStyle(
-                              fontFamily: "Montserrat",
-                              fontSize: 16,
-                              color: Colors.grey
-                          ),
+                          style: Theme.of(context).textTheme.headline1,
                         )
                       ],
                     ),
@@ -109,10 +101,10 @@ class _PerfilPetScreenState extends State<PerfilPetScreen> {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
-                        cartaoInfoPet('Idade', pet.idade.toString()),
-                        cartaoInfoPet('Sexo', pet.sexo.toString()),
-                        cartaoInfoPet('Cor', pet.cor.toString()),
-                        cartaoInfoPet('ID', pet.id.toString()),
+                        cartaoInfoPet('Idade', pet.idade.toString(), context),
+                        cartaoInfoPet('Sexo', pet.sexo.toString(), context),
+                        cartaoInfoPet('Cor', pet.cor.toString(), context),
+                        cartaoInfoPet('ID', pet.id.toString(), context),
                       ],
                     ),
                   ),
@@ -120,11 +112,7 @@ class _PerfilPetScreenState extends State<PerfilPetScreen> {
                     padding: EdgeInsets.symmetric(horizontal: 40, vertical: 25),
                     child: Text(
                       pet.bio,
-                      style: TextStyle(
-                          fontFamily: "Montserrat",
-                          fontSize: 16,
-                          height: 1.5
-                      ),
+                      style: Theme.of(context).textTheme.headline2,
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                     ),

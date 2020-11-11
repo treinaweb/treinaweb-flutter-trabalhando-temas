@@ -76,11 +76,7 @@ class _RemedioPetScreenState extends State<RemedioPetScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text("Remédios",
-                        style: TextStyle(
-                            fontFamily: "Montserrat",
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold
-                        ),)
+                        style: Theme.of(context).textTheme.bodyText1,)
                     ],
                   ),
                 ),

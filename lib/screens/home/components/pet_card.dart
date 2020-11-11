@@ -39,11 +39,7 @@ Widget petCard(BuildContext context, int index, Pet pet) {
               children: <Widget>[
                 Text(
                   pet.nome,
-                  style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold
-                  ),
+                  style: Theme.of(context).textTheme.bodyText1,
                 )
               ],
             ),
@@ -52,11 +48,7 @@ Widget petCard(BuildContext context, int index, Pet pet) {
             padding: EdgeInsets.fromLTRB(12, 12, 40, 0),
             child: Text(
               pet.descricao,
-              style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 16,
-                  color: Colors.grey
-              ),
+              style: Theme.of(context).textTheme.headline1,
             ),
           )
         ],

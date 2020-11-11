@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget cartaoInfoPet(String label, String informacao) {
+Widget cartaoInfoPet(String label, String informacao, BuildContext context) {
   return Container(
     margin: EdgeInsets.all(10),
     width: 100,
@@ -13,22 +13,12 @@ Widget cartaoInfoPet(String label, String informacao) {
       children: <Widget>[
         Text(
           label,
-          style: TextStyle(
-              fontFamily: "Montserrat",
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-              color: Colors.red
-          ),
+          style: Theme.of(context).textTheme.headline3,
         ),
         SizedBox(height: 8,),
         Text(
           informacao,
-          style: TextStyle(
-              fontFamily: "Montserrat",
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-              color: Colors.black
-          ),
+          style: Theme.of(context).textTheme.headline4,
         ),
       ],
     ),
