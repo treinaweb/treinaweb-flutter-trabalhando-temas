@@ -31,7 +31,6 @@ class _HomeScreenState extends State<HomeScreen> {
         if (snapshot.hasData) {
           pets = snapshot.data;
           return Scaffold(
-            backgroundColor: Colors.white,
             body: ListView.builder(
               itemCount: pets.length,
               itemBuilder: (context, index) {

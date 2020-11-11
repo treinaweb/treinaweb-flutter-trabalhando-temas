@@ -52,6 +52,50 @@ class Main extends StatelessWidget {
             )
         )
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Colors.blueAccent,
+        buttonTheme: ButtonThemeData(
+            buttonColor: Colors.blueAccent
+        ),
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+            backgroundColor: Colors.blueAccent,
+            foregroundColor: Colors.white
+        ),
+        textTheme: TextTheme(
+            bodyText1: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.white
+            ),
+            headline1: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 16,
+                color: Colors.blueAccent,
+                fontWeight: FontWeight.bold
+            ),
+            headline2: TextStyle(
+                fontFamily: "Montserrat",
+                fontSize: 16,
+                height: 1.5,
+                fontWeight: FontWeight.w500,
+                color: Colors.blueAccent
+            ),
+            headline3: TextStyle(
+                fontFamily: "Montserrat",
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                color: Colors.blueAccent
+            ),
+            headline4: TextStyle(
+                fontFamily: "Montserrat",
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                color: Colors.black
+            )
+          )
+      ),
       debugShowCheckedModeBanner: false,
     );
   }
