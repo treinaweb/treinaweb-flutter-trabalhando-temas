@@ -83,7 +83,6 @@ class _FormCadastroRemedioScreenState extends State<FormCadastroRemedioScreen> {
                                 ),
                               );
                             },
-                            color: Colors.redAccent,
                             child: Text("Cadastrar", style: TextStyle(
                                 color: Colors.white, fontSize: 16
                             ),),

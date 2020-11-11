@@ -143,7 +143,6 @@ class _PerfilPetScreenState extends State<PerfilPetScreen> {
               child: Icon(
                   Icons.edit
               ),
-              backgroundColor: Colors.redAccent,
             ),
             floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
             bottomNavigationBar: CustomNavbar(paginaAberta: 0, pet: pet,),

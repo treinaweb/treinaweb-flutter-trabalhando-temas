@@ -131,7 +131,6 @@ class _FormEditarPetScreenState extends State<FormEditarPetScreen> {
                                 ),
                               );
                             },
-                            color: Colors.redAccent,
                             child: Text("Editar",
                               style: TextStyle(
                                   color: Colors.white, fontSize: 16),

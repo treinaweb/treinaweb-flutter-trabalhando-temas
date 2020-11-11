@@ -46,12 +46,13 @@ class _CustomNavbarState extends State<CustomNavbar> {
                     children: <Widget>[
                       Icon(
                         Icons.pets,
-                        color: widget.paginaAberta == 0 ? Colors.redAccent : Colors.grey,
+                        color: widget.paginaAberta == 0 ?
+                        Theme.of(context).primaryColor : Colors.grey,
                       ),
                       Text(
                         "Perfil",
                         style: TextStyle(
-                          color: widget.paginaAberta == 0 ? Colors.redAccent : Colors.grey
+                          color: widget.paginaAberta == 0 ? Theme.of(context).primaryColor : Colors.grey
                         ),
                       )
                     ],
@@ -74,12 +75,12 @@ class _CustomNavbarState extends State<CustomNavbar> {
                     children: <Widget>[
                       Icon(
                         Icons.healing,
-                        color: widget.paginaAberta == 1 ? Colors.redAccent : Colors.grey,
+                        color: widget.paginaAberta == 1 ? Theme.of(context).primaryColor : Colors.grey,
                       ),
                       Text(
                         "Remédio",
                         style: TextStyle(
-                            color: widget.paginaAberta == 1 ? Colors.redAccent : Colors.grey
+                            color: widget.paginaAberta == 1 ? Theme.of(context).primaryColor : Colors.grey
                         ),
                       )
                     ],
@@ -103,12 +104,12 @@ class _CustomNavbarState extends State<CustomNavbar> {
                     children: <Widget>[
                       Icon(
                         Icons.local_hospital,
-                        color: widget.paginaAberta == 2 ? Colors.redAccent : Colors.grey,
+                        color: widget.paginaAberta == 2 ? Theme.of(context).primaryColor : Colors.grey,
                       ),
                       Text(
                         "Consulta",
                         style: TextStyle(
-                          color: widget.paginaAberta == 2 ? Colors.redAccent : Colors.grey
+                          color: widget.paginaAberta == 2 ? Theme.of(context).primaryColor : Colors.grey
                         ),
                       )
                     ],
@@ -126,12 +127,14 @@ class _CustomNavbarState extends State<CustomNavbar> {
                     children: <Widget>[
                       Icon(
                         Icons.event_note,
-                        color: widget.paginaAberta == 3 ? Colors.redAccent : Colors.grey,
+                        color: widget.paginaAberta == 3 ?
+                        Theme.of(context).primaryColor : Colors.grey,
                       ),
                       Text(
                         "Anotações",
                         style: TextStyle(
-                            color: widget.paginaAberta == 3 ? Colors.redAccent : Colors.grey
+                            color: widget.paginaAberta == 3 ?
+                            Theme.of(context).primaryColor : Colors.grey
                         ),
                       )
                     ],

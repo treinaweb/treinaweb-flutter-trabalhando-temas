@@ -48,7 +48,6 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               label: Text("Cadastrar"),
               icon: Icon(Icons.pets),
-              backgroundColor: Colors.redAccent,
             ),
           );
         } else {

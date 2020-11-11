@@ -112,7 +112,6 @@ class _FormCadastroPetScreenState extends State<FormCadastroPetScreen> {
                           ),
                         );
                       },
-                      color: Colors.redAccent,
                       child: Text("Cadastrar",
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       ),

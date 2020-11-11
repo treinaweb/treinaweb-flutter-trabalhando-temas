@@ -122,7 +122,6 @@ class _RemedioPetScreenState extends State<RemedioPetScreen> {
                 );
               },
               child: Icon(Icons.add),
-              backgroundColor: Colors.redAccent,
             ),
             floatingActionButtonLocation: FloatingActionButtonLocation
                 .centerDocked,

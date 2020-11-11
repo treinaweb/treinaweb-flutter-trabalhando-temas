@@ -11,6 +11,13 @@ class Main extends StatelessWidget {
       home: LoginScreen(),
       theme: ThemeData(
         primaryColor: Colors.redAccent,
+        buttonTheme: ButtonThemeData(
+          buttonColor: Colors.redAccent
+        ),
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Colors.redAccent,
+          foregroundColor: Colors.white
+        )
       ),
       debugShowCheckedModeBanner: false,
     );
